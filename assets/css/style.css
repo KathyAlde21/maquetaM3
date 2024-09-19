@@ -1,0 +1,58 @@
+header{
+    text-align: center;
+    margin: 1%
+}
+
+#tituloIndex{
+    color: blueviolet;
+}
+
+#descripcion{
+    text-align: center;
+    font-style: oblique;
+}
+
+/* web noticias */
+#noticias{
+    text-align: center;
+}
+
+
+/* web manuales */
+#imgManuales {
+    width: 18rem;
+    margin: 1%;
+    border-radius: 4%;
+    border-color: rgb(15, 235, 41);
+}
+#imgManualesDos {
+    width: 18rem;
+    margin: 1%;
+    border-color: blue;
+}
+
+
+/* web calendario */
+#calendario{
+    text-align: center;
+    margin: 5%;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-style: groove;
+}
+.first-day {
+    grid-column-start: 7;
+}
+.calendar-wrapper {
+    width: 280px;
+}
+.weekday {
+    background: #1de831;
+}
+
