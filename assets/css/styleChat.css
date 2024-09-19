@@ -1,0 +1,66 @@
+/* web chat */
+figure{
+    border-radius: 100%;
+    width: auto;
+    width: 90%;
+    height: 90%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.alerta{
+    font-size: 40px;
+    text-align: center;
+}
+
+.contenedorPadreRecibido{
+    display: flex;
+    flex-direction: row; 
+}
+
+.recibido{
+    background-color: rgb(4, 166, 72);
+    border-radius: 10px;
+    padding: 1% 3% 0% 1%;
+    margin-bottom: 10px;
+}
+
+.contenedorPadreEnviado{
+    display: flex;
+    flex-direction: row-reverse;  
+}
+
+.enviado{
+    background-color:rgb(113, 233, 15);
+    border-radius: 10px;
+    padding: 1% 1% 0% 3%;
+}
+
+.sinLeer{
+    font-weight: bold;
+}
+
+.contenedorNombre{
+    border-radius: 5px;
+    padding: 2% 0% 2% 0%;
+    text-align:start;
+    background-color: lightskyblue;
+}
+
+#containerChat{
+    text-align: start;
+    padding: 2% 0% 0% 0%;
+    background-color: rgb(178, 220, 246);
+}
+
+#contenedorMensajeEnviado{
+    display: none;
+}
+
+#chatCentral{
+    padding-top: 50px;
+    background-color: rgba(137, 249, 137, 0.828);
+}
+

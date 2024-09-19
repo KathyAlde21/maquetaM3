@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/cssBootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styleChat.css">
+    <link rel="stylesheet" href="./assets/css/cssBootstrap/bootstrap.css">
 </head>
 <body>
 
@@ -53,13 +54,242 @@
 
     <header>
         <div class="container-fluid">
-            <h1>Utilizar código Profesor</h1>
         </div>
     </header>
 
     <main>
         <div class="container">
             <div class="row">
+                <aside class="col-xs-12 col-md-4 d-none d-md-block">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          Conversaciones
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          <!-- Container de conversaciones-->
+                            <div class="container">
+                                <div class="row">
+                    <!-- -----------------------------------------------------  -->
+                                    <!-- diseno a tres columnas de los contactos  -->
+                                    <div class="col-xs-12 m-xs-0 m-md-2 contenedorNombre"  >
+                                        <!-- contacto 1-->
+                                        <div class="container" id="divSinLeer">
+                                            <div class="row contenedorAvatarNombre">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img class="img-fluid" src="./assets/image/avatar-dorado.png" alt="avatar">
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <p class="sinLeer">Andrea Alderete</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <small id="horaActual" class="sinLeer">14:25pm</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-- fin contacto 1-->
+                                    </div>
+                                    
+            
+            
+                                    <div class="col-xs-12 m-xs-0 m-md-2 contenedorNombre"  >
+                                        <!-- contacto 2-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img class="img-fluid" src="./assets/image/avatar-dorado.png" alt="avatar">
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <p>Claudia</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <small>14:25pm</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-- fin contacto 2-->
+                                    </div>
+                                    
+            
+                                    <div class="col-xs-12 m-xs-0 m-md-2 contenedorNombre"  >
+                                        <!-- contacto 3-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img class="img-fluid" src="./assets/image/avatar-dorado.png" alt="avatar">
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <p>Giovanni</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <small>14:25pm</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-- fin contacto 3-->
+                                    </div>
+                                    
+                                    
+                                    <div class="col-xs-12 m-xs-0 m-md-2 contenedorNombre"  >
+                                        <!-- contacto 4-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img class="img-fluid" src="./assets/image/avatar-dorado.png" alt="avatar">
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <p>Antü</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <small>14:25pm</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-- fin contacto 4-->
+                                    </div>
+                                   
+            
+                                    <div class="col-xs-12 m-xs-0 m-md-2 contenedorNombre"  >
+                                        <!-- contacto 5-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img class="img-fluid" src="./assets/image/avatar-dorado.png" alt="avatar">
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <p>León</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <small>14:25pm</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-- fin contacto 5-->
+                                    </div>
+                                </div>
+                            </div>  
+                            <!-- fin Container de conversaciones-->
+                        </div>
+                    </div>
+                </aside>
+    
+        <!-- -----------------------------------------------------  -->
+
+
+            <!-- Chat Central -->
+
+                <article class="col-xs-12 col-md-8" id="containerChat">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-2">
+                                            <figure id="figureAvatarChat">
+                                                <img src="./assets/image/avatar-dorado.png" alt="avatar" id="avatarChat">
+                                            </figure>
+                                        </div>
+                                        <div class="col-xs-12 col-md-10 text-center">
+                                            <h2>Andrea Alderete</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="chatCentral" class="col-xs-12">
+                                <br><br><br><br>
+                                <div class="contenedorPadreRecibido">
+                                    <div class="recibido">
+                                        <p>Hola Kathy, cómo estas?</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="contenedorPadreEnviado">
+                                    <div class="enviado">
+                                        <p>Bien gracias y tú?</p>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorPadreRecibido">
+                                    <div class="recibido">
+                                        <p>También estoy bien, quería saber si vas a celebrar el 18</p>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorPadreEnviado">
+                                    <div class="enviado">
+                                        <p>Claro, con mi familia ¿quieres venir?</p>
+                                    </div>
+                                </div>
+
+                                <div class="contenedorPadreRecibido">
+                                    <div class="recibido">
+                                        <p>¿a qué hora llego?</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contenedorPadreEnviado">
+                                    <div class="enviado" id="contenedorMensajeEnviado">
+                                        <p id="parrafoMensajeEnviado"></p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+
+
+                            <div class="col-xs-12">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-2">
+                                            <img>&#128578;</img>
+                                            <img>📎</img>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <form>
+                                                <input type="text" id="txtMensaje">
+                                                <input type="button" class="btn btn-primary" value="enviar" id="btnEnviar">
+                                            </form>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-10">
+                                                    <!-- dropdown-->
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Adjuntar
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Imagen</a></li>
+                                                                <li><a class="dropdown-item" href="#">Video</a></li>
+                                                                <li><a class="dropdown-item" href="#">documento</a></li>
+                                                                <li><hr class="dropdown-divider"></li>
+                                                                <li><a class="dropdown-item" href="#">Sonido</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- fin dropdown-->
+
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-2">
+                                                            <p>&#127908;</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                <button class="btn btn-outline-info d-block d-md-none">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+
+
 
             </div>
 
@@ -72,8 +302,7 @@
 
 
 
-
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/jsBootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/jsBootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
